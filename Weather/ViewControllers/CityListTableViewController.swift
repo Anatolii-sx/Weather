@@ -63,6 +63,7 @@ class CityListTableViewController: UITableViewController {
             if let forecast = weatherForecastCurrentDestination {
                 cityCell.configure(forecast: forecast, isLocationImageHidden: false)
             }
+            cityCell.backgroundColor = .clear
             cell = cityCell
         case 1:
             guard let cityCell = tableView.dequeueReusableCell(withIdentifier: "CityID", for: indexPath) as? CityTableViewCell else { return  UITableViewCell() }

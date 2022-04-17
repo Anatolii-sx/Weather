@@ -32,6 +32,7 @@ class CityTableViewCell: UITableViewCell {
     private lazy var locationImage: UIImageView = {
         let currentDestinationImage = UIImageView()
         currentDestinationImage.image = UIImage(systemName: "location.fill")
+        currentDestinationImage.tintColor = .white
         return currentDestinationImage
     }()
     
